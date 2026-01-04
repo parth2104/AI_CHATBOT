@@ -5,3 +5,4 @@ langchain_core
 streamlit
 pypdf
 langchain_openai
+langchain-huggingface
