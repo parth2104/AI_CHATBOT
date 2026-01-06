@@ -6,3 +6,6 @@ streamlit
 pypdf
 langchain_openai
 langchain-huggingface
+chromadb
+sentence-transformers
+
