@@ -28,7 +28,7 @@ def get_vectorstores():
         document_loader=loader.load()
         splitter=RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=100)
         chunks=splitter.split_documents(document_loader)
-        embedding=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2cls")
+        embedding=HuggingFaceEmbeddings(model="sentence-transformers/all-MiniLM-L6-v2")
 
         vectostore=Chroma.from_documents(chunks,embedding)
 
